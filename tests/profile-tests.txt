@@ -1,0 +1,129 @@
+PASS fixture starts unchanged
+PASS new complete schema
+PASS save all unchanged and unavailable rows
+PASS unavailable target preserved
+PASS empty target preserved
+PASS Auto label preserved exactly
+PASS DDR label not converted
+PASS SoC target stored without re-encoding
+PASS JSON includes all rows
+PASS current raw retained as metadata
+PASS unreadable raw stays null not zero
+PASS unavailable capability recorded
+PASS load all matched including disabled
+PASS all target strings restored
+PASS load never overwrites current readings
+PASS load never changes availability
+PASS same-as-current targets do not become writes
+PASS summary distinguishes import from apply
+PASS atomic overwrite remains full snapshot
+PASS save modified and read-only drafts
+PASS no temporary file left after save
+PASS duplicate capture rejected
+PASS failed capture leaves existing file intact
+PASS legacy schema and case-insensitive match
+PASS legacy partial load leaves other targets unchanged
+PASS legacy omissions explicitly counted
+PASS foreign row reported and retained
+PASS unknown survives re-save alongside all current rows
+PASS unknown exact target roundtrip
+PASS later discovered field not duplicated
+PASS current editor wins over retained unmatched copy
+PASS unmatched session does not leak into other collection
+PASS UCLK roundtrip Auto（默认分频）
+PASS UCLK roundtrip 1:1（同频）
+PASS UCLK roundtrip 1:2（分频）
+PASS UTF8 BOM supported
+PASS future schema rejected
+PASS wrong format kind rejected
+PASS null values rejected
+PASS missing values rejected
+PASS null row rejected
+PASS duplicate names rejected ignoring case
+PASS empty name rejected
+PASS ambiguous whitespace name rejected
+PASS control character in target rejected
+PASS target length bounded
+PASS duplicate root properties rejected
+PASS duplicate row properties rejected
+PASS oversized JSON rejected
+PASS parameter count bounded
+PASS invalid load rejected before edit
+PASS invalid load does not partially modify targets
+PASS empty legacy file does not reset all targets
+PASS loading new profile replaces unmatched retention
+PASS legacy bare MCLK unit preserved explicitly
+PASS legacy clock conversion reported
+PASS new bare DDR target retains marked unit
+PASS clock conversion 6400
+PASS clock conversion DDR5-6400
+PASS clock conversion 6400 MT/s
+PASS clock conversion MCLK 3200
+PASS clock conversion MCLK=3200 MHz
+PASS clock conversion DDR5-6400 (MCLK 3200 MHz)
+PASS clock reject DDR5-
+PASS clock reject 6401
+PASS clock reject -6400
+PASS clock reject 6400 MHz
+PASS clock reject DDR5-6400 junk
+PASS clock reject DDR5-6400 (MCLK 6400 MHz)
+PASS clock reject 12800
+PASS clock reject NaN
+PASS clock reject 6,400
+PASS non-clock parser remains original
+PASS exactly two displayed divider choices
+PASS coupled DIV1=1
+PASS decoupled DIV1=0
+PASS legacy divider accepted Auto（默认分频）
+PASS legacy divider accepted 1:2（分频）
+PASS legacy divider accepted 1：1（同频）
+PASS divider labels match exactly
+PASS use discrete Current instead of zero-filled range table
+PASS trim unused discrete padding by Length
+PASS reading source identifies actual table
+PASS preserve valid discrete zero
+PASS voltage uses matching range current
+PASS wrong response IDs rejected
+PASS out-of-bounds discrete length rejected
+PASS unknown discrete current rejected
+PASS read failure retained
+PASS current voltage uses invariant volts
+PASS Auto is not a measured zero voltage
+PASS missing voltage is not substituted from target
+PASS unknown SoC telemetry encoding not called measured volts
+PASS DIV1 off marked as not independently measured ratio
+PASS desktop platform allowlist
+PASS other platforms rejected
+PASS repeated same divider produces one submission per choice
+PASS repeat preserves requested raw value
+PASS block before write permission
+PASS zero commands on permission
+PASS block before write platform
+PASS zero commands on platform
+PASS block before write buffers
+PASS zero commands on buffers
+PASS block before write current
+PASS zero commands on current
+PASS block before write choices
+PASS zero commands on choices
+PASS block before write backup
+PASS zero commands on backup
+PASS send failure propagates
+PASS send failure never retries parameter
+PASS unarmed selection sends nothing
+PASS programmatic refresh/import sends nothing
+PASS one send per armed explicit selection including repeat
+PASS busy selection cannot overlap writes
+PASS busy latch released after completion
+PASS fresh clock request preflight
+PASS preflight requires admin
+PASS preflight requires supported CPU
+PASS preflight requires buffers
+PASS preflight rejects missing command
+PASS preflight rejects duplicate clock command
+PASS preflight rejects unconverted/out-of-list rate
+PASS preflight rejects changed ID
+PASS preflight rejects changed current
+PASS empty firmware response is not success
+PASS nonempty response retained without inventing status semantics
+TOTAL 128 / PASS 128 / FAIL 0 / HARDWARE_WRITES 0
