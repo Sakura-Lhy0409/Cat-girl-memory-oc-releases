@@ -6,9 +6,10 @@ AMD DDR5 内存调校工具，给 Raphael / Granite Ridge 平台用的。
 ## 下载
 
 最新版 0.4.0.4，去页面右边的 Releases 拿：
-`Cat-girl-memoryOC-0.4.0.4-UI-Windows-x64.zip`
+`Cat-girl-memoryOC.zip`
 
 解压就能用。Windows x64，不用装 .NET。
+包里有 exe、辉夜酱.png 和 `必须看.txt`（适配说明，先读这个）。
 
 ## 能干嘛
 
